@@ -1,4 +1,4 @@
 # spacexpage
 
 Github Pages:
-https://bronzyproductions.github.io/spacexpage/index.html
+https://bronzyproductions.github.io/spacexpage/
