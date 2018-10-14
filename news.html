@@ -2,18 +2,33 @@
      SpaceX Info/News Site
      Fully SEO Optimized
      Advertised
+     Google Analytics
      All content is written by Stephen Flynn
      All images belong to their respective owners
      2018: BronzyProductions-->
 <!DOCTYPE html>
 <html>
-  <title>SpacedOut</title>
+  <title>SpacedOut | News</title>
+  <meta name="description" content="The latest news from SpaceX, including launch dates, countdown, live updates and photos!">
+   <meta name="keywords" content="Elon Musk, Gwynne Shotwell, SpaceX, Dragon, BFR, Falcon Heavy, Launch">
+    <meta name="author" content="Stephen Flynn">
   <link rel="icon" href="https://bronzyproductions.com/images/Bronzyico.jpg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119598029-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119598029-2');
+  </script>
+
   <style>
     body {font-family: "Lato", sans-serif}
     .mySlides {
@@ -40,15 +55,15 @@
         <a href="main.html" title="Home" class="w3-bar-item" rel="home" id="logo"><img src="https://www.spacex.com/sites/all/themes/spacex2012/logo.png" alt="Home"></a>
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="#" class="w3-bar-item w3-button w3-padding-large">News</a>
-        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Info</a>
-        <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Wernher Von Braun</a>
+        <a href="info.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Info</a>
+        <a href="wernher.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Wernher Von Braun</a>
 
         <div class="w3-dropdown-hover w3-hide-small">
           <button class="w3-padding-large w3-button" title="More">ElonThings<i class="fa fa-caret-down"></i></button>
           <div class="w3-dropdown-content w3-bar-block w3-card-4">
-            <a href="#" class="w3-bar-item w3-button">TakingTeslaPrivate</a>
-            <a href="#" class="w3-bar-item w3-button">4/20</a>
-            <a href="#" class="w3-bar-item w3-button">Submarine</a>
+            <a href="elongthings.html" class="w3-bar-item w3-button">TakingTeslaPrivate</a>
+            <a href="elonthings.html" class="w3-bar-item w3-button">4/20</a>
+            <a href="elonthings.html" class="w3-bar-item w3-button">Submarine</a>
           </div>
         </div>
       </div>
@@ -56,14 +71,14 @@
 
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-      <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Info</a>
-      <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">News</a>
-      <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Wernher Von Braun</a>
-      <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ElonThings</a>
+      <a href="info.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Info</a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">News</a>
+      <a href="wernher.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Wernher Von Braun</a>
+      <a href="elonthings.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ElonThings</a>
     </div>
 
     <header class="w3-display-container w3-wide" id="home">
-      <img class="w3-image" src="https://www.spacex.com/sites/spacex/files/styles/featured_news_widget_image/public/field/image/jcsat_streak.jpg?itok=-O3L0FyC" alt="BronzyBanner" width="1600" height="1060">
+      <img class="w3-image" src="https://www.spacex.com/sites/spacex/files/styles/featured_news_widget_image/public/field/image/jcsat_streak.jpg?itok=-O3L0FyC" alt="SpaceX" width="1600" height="1060">
       <div class="w3-display-left w3-padding-large">
         <h1 class="w3-text-white"> Time Until CRS-16</h1>
         <h1 id="demo" class="w3-text-blue w3-jumbo"><b> </b></h1>
@@ -71,9 +86,9 @@
     </header>
 
     <!-- First Photo Grid-->
-  <div class="w3-row-padding w3-padding-16 w3-center" id="food">
+  <div class="w3-row-padding w3-padding-16 w3-center" id="info">
     <div class="w3-quarter">
-      <img src="https://independent.media.clients.ellingtoncms.com/img/photos/2018/10/03/spacex-falcon-9-landing_t958.JPG?fef15e12b784e9bbb22bf3f2924819218cda3d1a" alt="Sandwich" style="width:100%">
+      <img src="https://independent.media.clients.ellingtoncms.com/img/photos/2018/10/03/spacex-falcon-9-landing_t958.JPG?fef15e12b784e9bbb22bf3f2924819218cda3d1a" alt="Falcon 9" style="width:100%">
       <h3>Landing At Vandenberg</h3>
       <p>SpaceX recently made a historic landing at VAB in California, opening new
        and faster ways to launch rockets from factory to launch pad. The launch also
@@ -81,60 +96,74 @@
      a satellite for an Argentinian based company.</p>
     </div>
     <div class="w3-quarter">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SpaceX_Crew_Dragon_%28More_cropped%29.jpg/295px-SpaceX_Crew_Dragon_%28More_cropped%29.jpg" alt="Steak" style="width:100%">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/SpaceX_Crew_Dragon_%28More_cropped%29.jpg/295px-SpaceX_Crew_Dragon_%28More_cropped%29.jpg" alt="Dragon" style="width:100%">
       <h3>Crew Dragon Mission</h3>
       <p>Later next year SpaceX will be the first ever private company to send astronauts
        to the ISS and will also be the first American rocket, to launch American astronauts
-     from American soil to the ISS since the space shuttle retired in 2011.</p>
+     from American soil to the ISS since the space shuttle retired in 2011. The Dragon spacecraft
+   will take the astronauts to the ISS on the Falcon 9. Making the need for the Soyuz and the Russian
+  alliance with NASA no longer needed.</p>
     </div>
     <div class="w3-quarter">
-      <img src="https://cms.qz.com/wp-content/uploads/2018/01/blue-origin-new-shepard-experiment-research-jeff-bezos-texas-launch-reusable.jpg?quality=75&strip=all&w=410&h=231" alt="Cherries" style="width:100%">
+      <img src="https://cms.qz.com/wp-content/uploads/2018/01/blue-origin-new-shepard-experiment-research-jeff-bezos-texas-launch-reusable.jpg?quality=75&strip=all&w=410&h=231" alt="New Sheppard" style="width:100%">
       <h3>Airforce Funding</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
-      <p>What else?</p>
+      <p>Well fortune favours those who don't smoke weed on a podcast. After Elon Musks
+       podcast with Joe Rogan where they both smoked weed and violated SpaceX's contract with the
+      airforce on the use of recreational drugs, the airforce in what can be considered spite,
+    funded rockets of SpaceX's competitors including Jeff Bezos company "Blue Origin"</p>
     </div>
     <div class="w3-quarter">
-      <img src="https://media.wired.com/photos/5ba00948ca79862d1ac331af/master/pass/bfr-KE21RR.jpg" alt="Pasta and Wine" style="width:100%">
-      <h3>Moon Mission</h3>
-      <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+      <img src="https://www.nationalgeographic.com/content/dam/science/2018/10/1011/Soyuz/01_soyuz_rtx6epjr.ngsversion.1539275413759.adapt.1900.1.jpg" alt="Soyuz" style="width:100%">
+      <h3>Soyuz Failure</h3>
+      <p>On Thursday Oct 11, the Russian Soyuz rocket had its third ever failure while carrying two astronauts
+       to the ISS. After a booster rocket failed the crew had the make an escape via a ballistic landing (landing at a sharper angle).
+      This means that the current astronauts on the ISS are marooned until a new Soyuz can make it up or SpaceX or Boeing can
+     make it up, the next supply mission from SpaceX won't be until November.</p>
     </div>
   </div>
-
   <!-- Second Photo Grid-->
   <div class="w3-row-padding w3-padding-16 w3-center w3-black">
     <h1 class="w3-center">Gallery</h1>
     <div class="w3-quarter">
-      <img src="http://i.imgur.com/DLjeVO4.jpg" alt="Popsicle" style="width:100%">
+      <img src="http://cdn.perfectwallpaper.co/i/tablet/2560/1700/52/95/HELAmc-wallpaper-spacex-ship-red-dragon-mars-space-12072.jpg" alt="Dragon" style="width:100%">
 
     </div>
     <div class="w3-quarter">
-      <img src="http://i.imgur.com/DLjeVO4.jpg" alt="Salmon" style="width:100%">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkFap58E0aXJvUocjdKid7ZSOINxhc0Q7e9YrBDGv5c2Y_5yQN" alt="BFR" style="width:100%">
 
     </div>
     <div class="w3-quarter">
-      <img src="http://i.imgur.com/DLjeVO4.jpg" alt="Sandwich" style="width:100%">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKAw_QzLmnNjuGuHmRgLMyr8bYSrhiAS1CJtGlVTbHhq3a1rFxZA" alt="Drone Ship" style="width:100%">
 
     </div>
     <div class="w3-quarter">
-      <img src="http://i.imgur.com/DLjeVO4.jpg" alt="Croissant" style="width:100%">
-    </div>
-
-
-    <div class="w3-quarter">
-      <img src="http://i.imgur.com/DLjeVO4.jpg" alt="Popsicle" style="width:100%">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxOvqiXBx1LtAsQBUIewafiLdjumG3PRHiBEriV6c8YS-jTfsE-Q" alt="Falcon Heavy" style="width:100%">
 
     </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center w3-black">
     <div class="w3-quarter">
-      <img src="http://i.imgur.com/DLjeVO4.jpg" alt="Salmon" style="width:100%">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSywxguyNdxTU5YDll20hy3qfunLgBc3NqZhk9DGCvK8MtvKlud" alt="LA Sky" style="width:100%">
 
     </div>
     <div class="w3-quarter">
-      <img src="http://i.imgur.com/DLjeVO4.jpg" alt="Sandwich" style="width:100%">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQtLDxJx28s_koftAgUqnu8l3Yd4yl0rBxC-dAUrmdsEht3Qm2vZw" alt="BFR" style="width:100%">
 
     </div>
     <div class="w3-quarter">
-      <img src="http://i.imgur.com/DLjeVO4.jpg" alt="Croissant" style="width:100%">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQDhMpKM2tNtskVT1oDS0pX29vF9fIbVv7T3yEv4rZ59NCxFfDj" alt="Starman" style="width:100%">
+
     </div>
+    <div class="w3-quarter">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6mXqveXfnA-0cvGvRpw0mRzQBKEvIaaId-LUG_RISZ-v26xZjtA" alt="Fairing Deploy" style="width:100%">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-padding-16 w3-center w3-white">
+    <a class="twitter-timeline" data-width="400" data-height="1000" href="https://twitter.com/SpaceX?ref_src=twsrc%5Etfw">Tweets by SpaceX</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-width="400" data-height="1000" href="https://twitter.com/elonmusk?ref_src=twsrc%5Etfw">Tweets by elonmusk</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <a class="twitter-timeline" data-width="400" data-height="1000" href="https://twitter.com/NASA?ref_src=twsrc%5Etfw">Tweets by NASA</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
 
 <script>
@@ -169,4 +198,10 @@ var x = setInterval(function() {
 </script>
 
 </body>
+<footer class="w3-container w3-center w3-padding-64 w3-light-grey w3-xlarge">
+  <a href="https://www.facebook.com/groups/spacexgroup/"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+  <a href="https://www.instagram.com/spacex/?hl=en"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+  <a href="https://twitter.com/SpaceX?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+<h4>Made By <a href="https://bronzyproductions.com/">Bronzyproductions</a></h4>
+</footer>
 </html>
