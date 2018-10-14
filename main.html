@@ -2,6 +2,7 @@
      SpaceX Info/News Site
      Fully SEO Optimized
      Advertised
+     Google Analytics
      All content is written by Stephen Flynn
      All images belong to their respective owners
      2018: BronzyProductions-->
@@ -13,13 +14,27 @@
 
 <!DOCTYPE html>
 <html>
-  <title>SpacedOut</title>
+  <title>SpacedOut | Home</title>
+  <meta name="description" content="The latest news from SpaceX, including launch dates, countdown, live updates and photos!">
+   <meta name="keywords" content="Elon Musk, Gwynne Shotwell, SpaceX, Dragon, BFR, Falcon Heavy, Launch">
+    <meta name="author" content="Stephen Flynn">
   <link rel="icon" href="https://bronzyproductions.com/images/Bronzyico.jpg">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-119598029-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-119598029-2');
+  </script>
+
   <style>
     body {font-family: "Lato", sans-serif}
     .mySlides {
@@ -42,7 +57,7 @@
     <!-- Navbar-->
     <div class="header w3-top">
       <div class="w3-bar w3-black w3-card">
-        <a href="main.html" title="Home" class="w3-bar-item" rel="home" id="logo"><img src="https://www.spacex.com/sites/all/themes/spacex2012/logo.png" alt="Home"></a>
+        <a href="#" title="Home" class="w3-bar-item" rel="home" id="logo"><img src="https://www.spacex.com/sites/all/themes/spacex2012/logo.png" alt="Home"></a>
         <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
         <a href="news.html" class="w3-bar-item w3-button w3-padding-large">News</a>
         <a href="#band" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Info</a>
@@ -62,7 +77,7 @@
     <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
     <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
       <a href="#band" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Info</a>
-      <a href="news.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">News</a>
+      <a href="#tour" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">News</a>
       <a href="#contact" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Wernher Von Braun</a>
       <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">ElonThings</a>
     </div>
